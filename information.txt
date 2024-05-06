@@ -1,0 +1,33 @@
+#Information sur le projet
+
+1- framework Css = Tailwind Css
+2- librairie d'icon utilisé : react icons : npm i react-icons --save
+3- icon Dark-light : npm i react-toggle-dark-mode
+
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
+const [isDarkMode, setDarkMode] = useState(false);
+<DarkModeSwitch
+      style={{ marginBottom: '2rem' }}
+      checked={isDarkMode}
+      onChange={toggleDarkMode}
+      size={120}
+    />
+
+4- pour les routes : npm i react-router-dom
+5- pour le json local: npm install json-server | npx json-server db.json : pour lancer le server
+
+{
+  "panier": [
+    { "id": "1", "title": "a title", "views": 100 },
+    { "id": "2", "title": "another title", "views": 200 }
+  ]
+}
+
+#Liste des Apis :
+
+1- https://fakestoreapi.com/products : tous les produits
+2- ["electronics","jewelery","men's clothing","women's clothing"] : les catégories
+
+
+#server local :
+pour lancer le serveur local : npm run server
