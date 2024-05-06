@@ -12,7 +12,7 @@ const All = () => {
             key={item.id}
             className="p-5 bg-white  border rounded-md shadow-lg md:h-[230px]"
           >
-            <Link to="">
+            <div>
               <img
                 src={item.image}
                 alt={item.name}
@@ -27,7 +27,7 @@ const All = () => {
                   View product
                 </Link>
               </button>
-            </Link>
+            </div>
           </li>
         ))}
       </ul>
