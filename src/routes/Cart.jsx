@@ -34,7 +34,7 @@ const Cart = () => {
   }
 
   return (
-    <div className="py-40 dark:bg-slate-900 dark:text-white">
+    <div className="py-[280px] dark:bg-slate-900 dark:text-white">
       <h1 className="mb-5 text-center">
         {tab.length > 1
           ? `You have ${tab.length} products in your cart`
