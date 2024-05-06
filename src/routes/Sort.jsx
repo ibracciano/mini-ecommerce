@@ -60,12 +60,12 @@ const Sort = () => {
               key={item.id}
               className="p-5 bg-white border rounded-md shadow-lg md:h-[230px]"
             >
-              <Link to="">
+              <div>
                 <img
                   src={item.image}
                   alt={item.name}
                   // style={{ width: "65%", height: "65%", margin: "0 auto" }}
-                  className="md:w-[70%] md:h-[70%] mx-auto"
+                  className="md:w-[50%] md:h-[50%] mx-auto"
                 />
                 <button className="px-1 py-2 md:py-1 w-[50%] md:w-[70%] md:ml-[15%] ml-[25%] mt-3 text-white bg-purple-600 rounded-md">
                   <Link
@@ -75,7 +75,7 @@ const Sort = () => {
                     View product
                   </Link>
                 </button>
-              </Link>
+              </div>
             </li>
           ))}
         </ul>
@@ -86,12 +86,12 @@ const Sort = () => {
               key={item.id}
               className="p-5 bg-white border rounded-md shadow-lg md:h-[230px]"
             >
-              <Link to="">
+              <div>
                 <img
                   src={item.image}
                   alt={item.name}
                   // style={{ width: "65%", height: "65%", margin: "0 auto" }}
-                  className="md:w-[70%] md:h-[70%] mx-auto"
+                  className="md:w-[50%] md:h-[50%] mx-auto"
                 />
                 <button className="px-1 py-2 md:py-1 w-[50%] md:w-[70%] md:ml-[15%] ml-[25%] mt-3 text-white bg-purple-600 rounded-md">
                   <Link
@@ -101,7 +101,7 @@ const Sort = () => {
                     View product
                   </Link>
                 </button>
-              </Link>
+              </div>
             </li>
           ))}
         </ul>

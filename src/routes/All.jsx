@@ -16,8 +16,7 @@ const All = () => {
               <img
                 src={item.image}
                 alt={item.name}
-
-                className="md:w-[70%] md:h-[70%] mx-auto"
+                className="md:w-[50%] md:h-[50%] mx-auto"
               />
               <button className="px-1 py-2 md:py-1 w-[50%] md:w-[70%] md:ml-[15%] ml-[25%] mt-3 text-white bg-purple-600 rounded-md">
                 <Link
