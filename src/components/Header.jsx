@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-// import { FaCartPlus } from "react-icons/fa6";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
@@ -11,9 +10,8 @@ const Header = ({ isDarkMode, toggleDarkMode }) => {
     <div className="fixed top-0 w-full bg-white dark:bg-slate-950 dark:text-white">
       <div className="w-[90%] md:w-[80%] mx-auto py-5 flex justify-between items-center md:z-50">
         <p
-          className={`md:hidden border-2 border-slate-400 p-2 rounded-md ${
-            isMenuOpen ? "border-2 border-slate-400" : ""
-          } `}
+          className={`md:hidden border-2 border-slate-400 p-2 rounded-md ${isMenuOpen ? "border-2 border-slate-400" : ""
+            } `}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <RxCross1 /> : <RxHamburgerMenu />}
@@ -78,11 +76,10 @@ const Header = ({ isDarkMode, toggleDarkMode }) => {
         </ul>
 
         <ul
-          className={`flex absolute  bottom-[-60px] -left-0 gap-12 md:hidden bg-white shadow-lg w-full pl-5 py-5 dark:bg-slate-950 border-t border-slate-500 ${
-            isMenuOpen
-              ? "translate-x-0 duration-700 transition-all"
-              : "-translate-x-[450px]"
-          }`}
+          className={`flex absolute  bottom-[-60px] -left-0 gap-12 md:hidden bg-white shadow-lg w-full pl-5 py-5 dark:bg-slate-950 border-t border-slate-500 ${isMenuOpen
+            ? "translate-x-0 duration-700 transition-all"
+            : "-translate-x-[450px]"
+            }`}
         >
           <li>
             <NavLink
@@ -134,7 +131,6 @@ const Header = ({ isDarkMode, toggleDarkMode }) => {
           </li>
         </ul>
         <DarkModeSwitch
-          // style={{ marginBottom: "2rem" }}
           checked={isDarkMode}
           onChange={toggleDarkMode}
           size={30}
