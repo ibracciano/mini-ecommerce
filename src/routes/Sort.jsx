@@ -65,8 +65,10 @@ const Sort = () => {
                   src={item.image}
                   alt={item.name}
                   // style={{ width: "65%", height: "65%", margin: "0 auto" }}
-                  className="md:w-[50%] md:h-[50%] mx-auto"
+                  className="md:w-[30%] md:h-[30%] mx-auto"
                 />
+                <h3 className="mt-3 text-[10px] text-center font-semibold">{item.title}</h3>
+                <p className="mt-3 text-[12px] text-center font-bold">${item.price}</p>
                 <button className="px-1 py-2 md:py-1 w-[50%] md:w-[70%] md:ml-[15%] ml-[25%] mt-3 text-white bg-purple-600 rounded-md">
                   <Link
                     to={`/product/${item.id}`}
@@ -91,8 +93,10 @@ const Sort = () => {
                   src={item.image}
                   alt={item.name}
                   // style={{ width: "65%", height: "65%", margin: "0 auto" }}
-                  className="md:w-[50%] md:h-[50%] mx-auto"
+                  className="md:w-[30%] md:h-[30%] mx-auto"
                 />
+                <h3 className="mt-3 text-[10px] text-center font-semibold">{item.title}</h3>
+                <p className="mt-3 text-[12px] text-center font-bold">${item.price}</p>
                 <button className="px-1 py-2 md:py-1 w-[50%] md:w-[70%] md:ml-[15%] ml-[25%] mt-3 text-white bg-purple-600 rounded-md">
                   <Link
                     to={`/product/${item.id}`}

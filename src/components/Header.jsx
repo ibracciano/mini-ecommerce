@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
@@ -17,12 +17,12 @@ const Header = ({ isDarkMode, toggleDarkMode }) => {
           {isMenuOpen ? <RxCross1 /> : <RxHamburgerMenu />}
         </p>
 
-        <h1 className="text-xl">
+        <Link to="/" className="text-xl cursor-pointer">
           <span className="w-3 h-3 px-2 mr-1 text-white bg-red-500 rounded-md">
             e
           </span>
           <span className="font-semibold">Shop</span>
-        </h1>
+        </Link>
 
         <ul className="hidden gap-10 md:flex">
           <li>

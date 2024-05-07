@@ -34,21 +34,23 @@ const Categories = () => {
           </select>
         </div>
         {category === "electronics" && (
-          <ul className="w-[90%] md:w-[80%] mx-auto grid grid-cols-1 gap-10 md:grid-cols-4 py-10 ">
+          <ul className="w-[90%] md:w-[100%] mx-auto grid grid-cols-1 gap-10 md:grid-cols-4 py-10 ">
             {data
               .filter((item) => item.category === "electronics")
               .map((item) => (
                 <li
                   key={item.id}
-                  className="p-5 bg-white border rounded-md shadow-lg md:h-[230px]"
+                  className="p-5 bg-white border rounded-md shadow-lg md:h-[220px]"
                 >
                   <div>
                     <img
                       src={item.image}
                       alt={item.name}
                       // style={{ width: "65%", height: "65%", margin: "0 auto" }}
-                      className="md:w-[70%] md:h-[70%] mx-auto"
+                      className="md:w-[30%] md:h-[30%] mx-auto"
                     />
+                    <h3 className="mt-3 text-[10px] text-center font-semibold">{item.title}</h3>
+                    <p className="mt-3 text-[12px] text-center font-bold">${item.price}</p>
                     <button className="px-1 py-2 md:py-1 w-[50%] md:w-[80%] md:ml-[10%] ml-[25%] mt-3 text-white bg-purple-600 rounded-md">
                       <Link
                         to={`/product/${item.id}`}
@@ -64,7 +66,7 @@ const Categories = () => {
         )}
 
         {category === "jewelery" && (
-          <ul className="w-[90%] md:w-[80%] mx-auto grid grid-cols-1 gap-10 md:grid-cols-4 py-10 ">
+          <ul className="w-[90%] md:w-[100%] mx-auto grid grid-cols-1 gap-10 md:grid-cols-4 py-10 ">
             {data
               .filter((item) => item.category === "jewelery")
               .map((item) => (
@@ -77,8 +79,10 @@ const Categories = () => {
                       src={item.image}
                       alt={item.name}
                       // style={{ width: "65%", height: "65%", margin: "0 auto" }}
-                      className="md:w-[70%] md:h-[70%] mx-auto"
+                      className="md:w-[30%] md:h-[30%] mx-auto"
                     />
+                    <h3 className="mt-3 text-[10px] text-center font-semibold">{item.title}</h3>
+                    <p className="mt-3 text-[12px] text-center font-bold">${item.price}</p>
                     <button className="px-1 py-2 md:py-1 w-[50%] md:w-[80%] md:ml-[10%] ml-[25%] mt-3 text-white bg-purple-600 rounded-md">
                       <Link
                         to={`/product/${item.id}`}
@@ -94,7 +98,7 @@ const Categories = () => {
         )}
 
         {category === "men's clothing" && (
-          <ul className="w-[90%] md:w-[80%] mx-auto grid grid-cols-1 gap-10 md:grid-cols-4 py-10 ">
+          <ul className="w-[90%] md:w-[100%] mx-auto grid grid-cols-1 gap-10 md:grid-cols-4 py-10 ">
             {data
               .filter((item) => item.category === "men's clothing")
               .map((item) => (
@@ -102,13 +106,15 @@ const Categories = () => {
                   key={item.id}
                   className="p-5 bg-white border rounded-md shadow-lg md:h-[230px]"
                 >
-                  <Link to="">
+                  <div>
                     <img
                       src={item.image}
                       alt={item.name}
                       // style={{ width: "65%", height: "65%", margin: "0 auto" }}
-                      className="md:w-[70%] md:h-[70%] mx-auto"
+                      className="md:w-[30%] md:h-[30%] mx-auto"
                     />
+                    <h3 className="mt-3 text-[10px] text-center font-semibold">{item.title}</h3>
+                    <p className="mt-3 text-[12px] text-center font-bold">${item.price}</p>
                     <button className="px-1 py-2 md:py-1 w-[50%] md:w-[80%] md:ml-[10%] ml-[25%] mt-3 text-white bg-purple-600 rounded-md">
                       <Link
                         to={`/product/${item.id}`}
@@ -117,14 +123,14 @@ const Categories = () => {
                         View product
                       </Link>
                     </button>
-                  </Link>
+                  </div>
                 </li>
               ))}
           </ul>
         )}
 
         {category === "women's clothing" && (
-          <ul className="w-[90%] md:w-[80%] mx-auto grid grid-cols-1 gap-10 md:grid-cols-4 py-10 ">
+          <ul className="w-[90%] md:w-[100%] mx-auto grid grid-cols-1 gap-10 md:grid-cols-4 py-10 ">
             {data
               .filter((item) => item.category === "women's clothing")
               .map((item) => (
@@ -137,8 +143,10 @@ const Categories = () => {
                       src={item.image}
                       alt={item.name}
                       // style={{ width: "65%", height: "65%", margin: "0 auto" }}
-                      className="md:w-[70%] md:h-[70%] mx-auto"
+                      className="md:w-[30%] md:h-[30%] mx-auto"
                     />
+                    <h3 className="mt-3 text-[10px] text-center font-semibold">{item.title}</h3>
+                    <p className="mt-3 text-[12px] text-center font-bold">${item.price}</p>
                     <button className="px-1 py-2 md:py-1 w-[50%] md:w-[80%] md:ml-[10%] ml-[25%] mt-3 text-white bg-purple-600 rounded-md">
                       <Link
                         to={`/product/${item.id}`}

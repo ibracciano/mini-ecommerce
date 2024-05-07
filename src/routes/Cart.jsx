@@ -34,12 +34,16 @@ const Cart = () => {
   }
 
   return (
-    <div className="py-[280px] dark:bg-slate-900 dark:text-white">
-      <h1 className="mb-5 text-center">
+    <div className="pt-[180px] pb-24 dark:bg-slate-900 dark:text-white">
+      <h1
+        className={`text-center mb-7 ${
+          tab.length === 0 && "mb-[260px] mt-20  text-md"
+        }`}
+      >
         {tab.length > 1
           ? `You have ${tab.length} products in your cart`
           : tab.length === 0
-          ? `No products in your cart`
+          ? `You have no product in your cart`
           : `You have ${tab.length} product in your cart`}
       </h1>
       <div className="w-[90%] md:w-[80%] mx-auto grid md:grid-cols-4 gap-5">
